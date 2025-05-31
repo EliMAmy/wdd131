@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #3a1763;
+    --secondary-color: #eff3f3;
+    --accent1-color: #f0c9c9;
+    --accent2-color: #ffffff;
+    --heading-font: "Merryweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: last baseline;
+    width: 1100px;
+    margin: 0 auto;
+
+   
+}
+nav{
+    max-width: 800 px;
+    display:flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+nav a{
+    color: var(--secondary-color);
+    text-decoration-line: none;
+    display: block;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: 800;
+
+}
+nav a:hover{
+    transition: .4s ease;
+    color: var(--accent1-color);
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+h1{
+    text-align: center;
+    grid-column: 1/2;
+}
+div{
+    grid-column: 1/2;
+}
+
+footer{
+    display: grid;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    grid-template-rows: 2;
+    justify-content:center;
+   
+    
+}
+    
