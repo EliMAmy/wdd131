@@ -6,53 +6,52 @@
     --heading-font: "Merryweather Sans", sans-serif;
     --body-font: "Lato", sans-serif;
 }
-
+body{
+    margin: 0;
+}
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 20px;
     display: grid;
-    grid-auto-flow: column;
-    justify-content: last baseline;
-    width: 1100px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
 
-   
+.navigation{
+    display: flex;
+    list-style-type: none;
+
+    
 }
-nav{
-    max-width: 800 px;
-    display:flex;
-    justify-content:space-evenly;
-    gap: 10px;
-    padding: 10px;
-}
-nav a{
-    color: var(--secondary-color);
-    text-decoration-line: none;
-    display: block;
-    padding: 1rem;
+.navigation a{
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
     font-size: larger;
-    font-weight: 800;
-
+    
 }
-nav a:hover{
-    transition: .4s ease;
-    color: var(--accent1-color);
+
+.navigation li{
+    padding: 13px;
 }
 
 main{
     max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 100%;
+
 }
 
 h1{
     text-align: center;
-    grid-column: 1/2;
+    font-family: var(--heading-font);
 }
 div{
-    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+div figure{
+    justify-items: center;
 }
 
 footer{

@@ -1,9 +1,9 @@
-@media screen and (min-width: 700px){
-/*     main{
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 110px;
-    } */
-}
-    
+@media screen and (min-width: 900px){
+    div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ; 
+            justify-content: center;  
+    }
+}   
 
     
