@@ -4,7 +4,30 @@
             grid-template-columns: 1fr 1fr 1fr ; 
             justify-content: center;  
     }
-
+        #menu {
+           display: none;
+        }
+    
+        #menu::before {
+            display: none;
+        }
+    
+    
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin: 0 auto;
+            max-width: 760px;
+        }
+    
+        .navigation li {
+            
+            display: block;
+        }
+    
+       
+      
 }   
 
     
