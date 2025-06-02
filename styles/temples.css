@@ -110,9 +110,8 @@ footer{
     display: grid;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    grid-template-rows: 2;
+    grid-template-rows: 1fr 1fr;
     justify-content:center;
-   
-    
+
 }
     
