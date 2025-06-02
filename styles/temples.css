@@ -16,25 +16,77 @@ header {
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
+#menu {
+    display: grid;
+    justify-content: end;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 40px;
+}
 
-.navigation{
-    display: flex;
-    list-style-type: none;
+#menu::before {
+    content: "≡";
+}
 
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
     
 }
-.navigation a{
+
+.navigation a {
+    padding: 0.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+    
+}
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+   
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    font-weight: 100;
+    font-size:x-large;
+    font-family: var(--heading-font)
+
+}
+.navigation {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+
+
+}
+
+.navigation a {
     color: var(--accent2-color);
     text-decoration: none;
     font-family: var(--heading-font);
     font-size: larger;
-    
+
 }
 
-.navigation li{
+.navigation li {
     padding: 13px;
 }
-
 main{
     max-width: 800px;
     margin: 0 auto;
