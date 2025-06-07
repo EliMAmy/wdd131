@@ -1,0 +1,59 @@
+:root {
+    --primary-color: #137196;
+    --secondary-color: #eff3f3;
+    --accent1-color: #c9eaf0;
+    --accent2-color: #cce4e6;
+    --heading-font: "Merryweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+*{
+    font-family: var(--heading-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 5px;
+}
+h1,h2 {
+    text-align: center;
+}
+main{
+    background-color: var(--accent1-color);
+    
+   
+}
+.hero {
+  display: grid;
+  justify-content: center;
+  border-color: var(--accent1-color);
+
+
+}
+.hero picture img {
+    width: 300px;
+    height: 500px;
+}
+
+#weather-data,#weatherinfo {
+    background-color: var(--accent2-color);
+    padding: 20px;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+}
+.sub img{
+    height: 90px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 10px;  
+}
+
+footer p {
+    text-align: center;
+}
