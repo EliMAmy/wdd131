@@ -11,6 +11,10 @@
     font-family: var(--heading-font);
 }
 
+h2::first-line {
+    color: rgb(11, 44, 46);
+    text-transform: uppercase; 
+}
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);

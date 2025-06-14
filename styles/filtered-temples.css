@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #3a1763;
+    --secondary-color: #ebebebc9;
+    --accent1-color: #f0c9c9;
+    --accent2-color: #ffffff;
+    --heading-font: "Merryweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+*{
+    font-family: var(--heading-font);
+}
+body{
+    margin: 0;
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+#menu {
+    display: grid;
+    justify-content: end;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 40px;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    padding: 0.75rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+    font-weight: 100;
+    font-size:x-large;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.navigation a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navigation li {
+    padding: 13px;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;    
+    padding: 30px;
+}
+
+section{
+    background-color: var(--secondary-color);
+    text-align: center;
+    height: 450px;
+}
+h1,h2{
+    text-align: center;
+}
+h3{
+    padding: 20px;
+}
+section p{
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size:medium;
+}
+
+section img{
+    justify-items: center;
+    height: 250px;
+    width: 320px;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px
+}
+
+footer{
+    display: grid;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    grid-template-rows: 1fr 1fr;
+    justify-content:center;
+
+}
+footer p{
+    text-align: center;
+}
+    
