@@ -127,8 +127,14 @@ const temples = [
 
 ];
 
+createTempleCard(temples);
 
+const oldTempleLink = document.querySelector("#nonUtah");
+nonUtahLink.addEventListener("click", () => {
+    nonUtahCard(temples.filter(temple => !temple.location.includes("Utah")));
+});
 function createTempleCard() {
+    document.querySelector(".res-grid").innerHTML = "";
     temples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
@@ -155,4 +161,3 @@ function createTempleCard() {
     });
 
 }
-createTempleCard();  

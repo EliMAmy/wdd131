@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #024b68;
+    --secondary-color: #eff3f3;
+    --accent1-color: #9FF094;
+    --accent2-color: #d2e4df;
+    --heading-font: "Merryweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    color:var(--accent1-color);
+    padding: 0.8rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+body {
+    margin: 0;
+    background-color: var(--accent2-color);
+
+}
+main{
+    padding: 50px;
+}

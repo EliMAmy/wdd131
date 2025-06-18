@@ -1,17 +1,17 @@
 @media screen and (min-width: 900px){
     div {
-            display: grid;
-            grid-template-columns:1fr 1fr 1fr; 
-            justify-content: center; 
-            row-gap: 20px; 
-            column-gap: 15px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr; 
+        justify-content: center; 
+        row-gap: 20px; 
+        column-gap: 15px;
     }
     section{
         height:380px;
     }
     section img{
         height: 170px;
-        width: 200px;
+        width: 220px;
         margin-top: 1rem;
         border: 1px solid;
         border-color: var(--secondary-color);
@@ -23,27 +23,25 @@
         font-size: small;
     }
 
-        #menu {
-           display: none;
-        }
+    #menu {
+        display: none;
+    }
     
-        #menu::before {
-            display: none;
-        }
+    #menu::before {
+        display: none;
+    }
     
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
     
-        .navigation {
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            margin: 0 auto;
-            max-width: 760px;
-        }
-    
-        .navigation li {
-            
-            display: block;
-        }
+    .navigation li {
+        display: block;
+    }
     
        
       
