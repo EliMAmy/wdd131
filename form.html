@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Dynamic Web Fundamentals - Rocio Apaza</title>
+    <meta name="description" content="A Product Review Form">
+    <meta name="author" content="Rocio Apaza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label>Product Name<br>
+                <select name="product_name" id="product_name" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </label>
+            <fieldset class="stars">
+                <legend>Overall Rating</legend>
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+            </fieldset>
+            <label>Date of Installation<br>
+                <input type="date" name="date_installation" id="date_installation" required>
+            </label>
+            <fieldset>
+                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <label><input type="checkbox" name="feature1" id="feature1" value="durability">Durability</label>
+                <label><input type="checkbox" name="feature2" id="feature2" value="easy_use">Ease of Use</label>
+                <label><input type="checkbox" name="feature3" id="feature3" value="performance">Performance</label>
+                <label><input type="checkbox" name="feature4" id="feature4" value="design">Design</label>
+            </fieldset>
+            <label>Written Review (Optional)<br>
+                <textarea name="review" id="review"></textarea>
+            </label>
+            <label>Your Name (Optional)<br>
+                <input type="text" name="user_name" id="user_name">
+            </label>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&#127744;<span id="currentyear"></span> &#127744; Rocio Apaza Paricahua ,Peru &#127744;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

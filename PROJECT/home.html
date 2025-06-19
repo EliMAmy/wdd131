@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Dynamic Web Fundamentals - Rocio Apaza</title>
+    <meta name="description" content="Home page for the Turtos Tourist website">
+    <meta name="author" content="Rocio Apaza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-medium.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Turtos Tourist Arequipa</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a class="selected" href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="places.html">Your Places </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/arequipa.webp">
+                <source media="(min-width: 600px)" srcset="images/arequipa-medium.webp">
+                <img src="images/arequipa-medium.webp" alt="Salinas-Peru" width="500" height="250">
+            </picture>
+        </div>
+        <div class="sign_up">
+            <img src="images/sign_up.jpg" alt="sign_up">
+            <section class="form">
+                <h2>Sign Up  </h2>
+                <form class="input">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name">
+        
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email"><br>
+        
+                    <button type="Submit" id="SubmitNewspaper">Sign Up</button>
+                </form>
+            </section>
+        </div>
+        <p class="action">Are you ready for an adventure? Check out <a href="places.html">Your Places</a> page now!</p>
+        <section class="grid-layout">
+            
+            <div class="grid-item">
+                <img src="images/city.jpg" alt="city">
+                <h3>Arequipa City</h3>
+                <p>Arequipa is a serene metropolis blessed with a pleasant climate and eternal sunshine. Among its many treasures are
+                photogenic plazas lined by palm trees, colonial-era architecture that have earned the city its UNESCO World Heritage
+                title, and regional dishes.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/volcano.jpg" alt="Volcano">
+                <h3>Misti Volcano</h3>
+                <p>As you wander the cobblestoned streets, you’ll quickly see why Arequipa is called the “White City” or “Ciudad Blanca.”
+                Sillar is petrified ash from decades worth of volcanic eruptions. Used as the primary building material for Arequipa’s
+                churches and mansions, it bestows the city with a radiant appearance.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/colca.jpg" alt="canyon">
+                <h3>Colca Canyon</h3>
+                <p>
+                    Situated beneath the towering gaze of the Misti Volcano, and within easy reach of one of the world’s deepest canyons -
+                    Colca, home of the majestic condor - Peru’s second most populous city possesses thrills and attractions to suit all
+                    tastes. Among the urban centers of the southern Andes, Arequipa is undoubtedly the most attractive and a must-see for
+                    any traveler on a trip to Peru.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&#x1F338;<span id="currentyear"></span> &#x1F338; Rocio Apaza Paricahua ,Peru &#x1F338;</p>
+        <p id="lastModified"></p>  
+    </footer>
+    
+</body>
+</html>

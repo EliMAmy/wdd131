@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #137196;
+    --secondary-color: #eff3f3;
+    --accent1-color: #c9eaf0;
+    --accent2-color: #cce4e6;
+    --heading-font: "Merryweather Sans", sans-serif;
+    --body-font: "Lato", sans-serif;
+}
+
+*{
+    font-family: var(--heading-font);
+}
+html, body{
+    margin: 0px;
+    height: 100%;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 5px;
+}
+h1{
+    text-align: center;
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;    
+    padding: 30px;
+    background-color: var(--accent1-color);
+    min-height: 64vh;
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 10px;  
+}
+
+footer p {
+    text-align: center;
+}
+
+form{
+    padding: 30px;
+    display: grid;
+    border: var(--primary-color) 4px solid;
+    border-radius: 10px;
+}
+form > label, fieldset{
+    margin-bottom: 15px;
+}
+fieldset{
+    display: grid;
+    border: none;
+    padding: 0px;
+    margin-left: 0px;
+}
+fieldset :nth-child(2){
+    margin-top: 4px;
+}
+textarea{
+    height: 80px;
+}
+
+input[type="text"],input[type="date"],textarea,select{
+    width: 100%;
+    padding: 5px;
+    margin-top: 4px;
+    border: var(--primary-color) 2px solid;
+}
+input[type="submit"]{
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    justify-self: center;
+    margin-top: 15px;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: var(--primary-color);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+    margin: 0px;
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
