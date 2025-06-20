@@ -35,16 +35,15 @@
     .maps {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 60px;
+        padding: 30px;
+        gap: 20px;
     }
     
     .maps p {
-        padding: 0.5px;
-        text-align: left;
+        text-align: center;
     }
-    
-    .map-text {
-        padding-top: 20%;
+    .map-text{
+        grid-row: 2/3;
     }
     
     .map {
@@ -53,15 +52,17 @@
     }
     
     .map iframe {
-        width: 600px;
-        height: 300px;
+        width: 700px;
+        height: 400px;
     }
     .info .form {
-        max-width: 600px;
-        margin: 0 18% 50px 18%;
-        background-color: #e0e4e6
+        max-width: 500px;
+        border-radius: 5px;
+        background-color: #e0e4e6;
     }
-    
+    input{
+        border-color:var(--accent2-color)
+    }
     .info h2 {
         padding: 15px;
         margin: 0;
@@ -76,22 +77,6 @@
         width: 100%;
         box-sizing: border-box;
     }
+        
     
-    button {
-        background-color: var(--primary-color);
-        color: #fffcfc;
-        font-size: 20px;
-        font-weight: 600;
-        padding: 10px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 100%;
-        transition: .4s ease;
-    }
-    
-    #name,
-    #email {
-        width: 196px;
-    }
 }

@@ -14,7 +14,6 @@
 body {
     margin: 0;
 }
-
 header {
     background-color: var(--primary-color);
     color: var(--accent1-color);
@@ -31,7 +30,7 @@ header {
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     background-color: var(--primary-color);
-    color: var(--accent2-color);
+    color: #ffffff;
     padding: 40px;
 }
 
@@ -39,7 +38,11 @@ header {
     content: "≡";
 }
 
+
 .navigation {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
     list-style: none;
     margin: 0 auto;
     max-width: 760px;
@@ -47,7 +50,6 @@ header {
 
 .navigation li {
     display: none;
-
 }
 
 .navigation a {
@@ -55,13 +57,11 @@ header {
     text-decoration: none;
     font-weight: 700;
     transition: 0.5s;
-
 }
 
 .navigation a:hover,
 .navigation a:active {
-    color: var(--accent1-color);
-
+    color: white;
 }
 
 .show li {
@@ -72,105 +72,105 @@ header {
     content: "X";
     font-weight: 100;
     font-size: x-large;
-    font-family: var(--heading-font)
 }
 
-.navigation {
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-
-
-}
 
 .navigation a {
     color: var(--accent2-color);
     text-decoration: none;
-    font-family: var(--heading-font);
     font-size: larger;
-
 }
 
 .navigation li {
     padding: 13px;
 }
-main{
-    min-height: 79vh;
-}
 
-h1,h2 {
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.more{
+    background-color: var(--secondary-color);
     text-align: center;
+    height: 1070px; 
 }
-h2,h3{
-    color: var(--primary-color);
-}
-.maps {
+.hero {
     display: grid;
-    padding: 40px;
-    gap:10px;
+    justify-content: center;
+    border-color: var(--accent1-color);
+    gap: 30px;
 }
 
-.map-text {
-    padding-left: 35px;
-    padding: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
+.hero picture img {
+    width: 380px;
+    height: 320px;
+}
+#weather-data,
+#weatherinfo {
     background-color: var(--accent2-color);
+    padding: 10px;
 }
 
-.map iframe {
-    width: 100%;
-    height:350px;
+.sub {
+    display: flex;
+    flex-direction: column;
 }
-.info p{
+.sub h2 {
+    padding: 0px;
+}
+.sub img {
+    height: 90px;
+}
+table {
+    padding: 15px;
+}
+section {
+    background-color: var(--secondary-color);
+    text-align: center;
+    height: 450px;
+}
+
+h1,
+h2,h3{
     text-align: center;
 }
-.info .form {
-    border-radius: 5px;
-    margin: 0 auto 50px auto;
-    background-color: #e0e4e6;
-
+h2,
+h3 {
+    color:var(--primary-color);
+    padding-top: 30px;
 }
-input{
-    border-color:var(--accent2-color)
+section{
+    width: 400px;
+    height: 100%;
+    gap:40px;
+    
 }
-.info h2 {
-    padding: 15px;
-    margin: 0;
-}
-label{
-    display: block;
-    margin: 10px 0;
-}
-
-.input,textarea {
-    padding: 12px;
-    width: 100%;
-    box-sizing: border-box;
+section p {
+    margin-top: 18px;
+    margin-bottom: 13px;
+    font-size: medium;
+    text-align: justify;
+    width: 350px;
+    padding-left: 23px;
 }
 
-#submitButton {
-    background-color: var(--primary-color);
-    color: #fffcfc;
-    font-size: 15px;
-    font-weight: 300;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 40%;
+section img {
+    justify-items: center;
+    height: 220px;
+    width: 320px;
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px;
 }
 
-#name,
-#email {
-    width: 98%;
-}
 footer {
     display: grid;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     grid-template-rows: 1fr 1fr;
     justify-content: center;
+
 }
 
 footer p {

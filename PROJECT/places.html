@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131-Dynamic Web Fundamentals - Rocio Apaza</title>
+    <meta name="description" content="Many information about Turtos Tourist website of Arequipa.">
+    <meta name="author" content="Rocio Apaza">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/places.css">
+    <link rel="stylesheet" href="styles/places-medium.css">
+    <link rel="stylesheet" href="styles/places-large.css">
+
+    <script src="scripts/places.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Turtos Tourist Arequipa</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a  href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="selected" href="places.html">Your Places </a>
+                <li><a href=""id="large">Only Arequipa</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="more">
+            <h2>Climate & Weather</h2>
+            <p>Arequipa is in a fertile valley surrounded by high-peaked mountains. But the broader region sits on the edge of the
+            driest desert in the world, the Atacama Desert. A couple of hundred miles from the city, in the Cotahuasi area,
+            altitudes range from 3,000 feet to 20,000 feet (and above) and encompass nineteen ecological zones. If you venture out
+            to the mountains and highlands around Arequipa, expect stronger sun and winds during the day and significantly cooler
+            temperatures at night.
+            In terms of weather, Arequipa has plenty of sunny days that are typical of high desert climates and temperatures
+            moderated by the city’s 7,660 feet (2,335 meters) elevation. Daytime temperatures are usually around 65°F (18°C), rarely
+            going below 50°F (10°C) or rising above 77°F (25°C). Nights can dip down to 45°F (7°C).</p>
+            <h2>Best Time to Visit</h2>
+            <img src="images/graphic-arequipa.svg" alt="Arequipa bes time" >
+            <p>The city of Arequipa enjoys around 300 days of sunshine each year. The best time to visit Arequipa is anytime from April
+            to November when the weather is pleasant. Conditions are sunny with blue skies, and daytime temperatures are mild. The
+            region’s high altitude and plenty of sun produce high risk for sunburn, so stroll the streets of Arequipa wearing a hat
+            and high SPF sunscreen.
+            
+            If you plan to add Colca Canyon to your Arequipa itinerary, the best time to plan your trip is from May to November.
+            These months are the dry season in Colca Canyon, which coincides with beautiful weather in Arequipa too. One of the
+            highlights of visiting Colca is spotting Andean condors, and chances of seeing them outside the dry season is much lower.</p>
+        </section>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/weather.webp">
+                <source media="(min-width: 600px)" srcset="images/weather.webp">
+                <img src="images/weather.webp" alt="Aequipa-Peru" width="500" height="250">
+            </picture>
+            <div id="weather-data">
+                <div class="sub">
+                    <h2>Data</h2>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Area:</td>
+                            <td>63,345 sq km</td>
+                        </tr>
+                        <tr>
+                            <td>Population:</td>
+                            <td>984,000</td>
+                        </tr>
+                        <tr>
+                            <td>Capital:</td>
+                            <td>Arequipa</td>
+                        </tr>
+                        <tr>
+                            <td>Languages:</td>
+                            <td>Spanish, Quechua</td>
+                        </tr>
+                        <tr>
+                            <td>Currency:</td>
+                            <td>Soles</td>
+                        </tr>
+                        <tr>
+                            <td>Time Zone:</td>
+                            <td>GMT-5</td>
+                        </tr>
+                        <tr>
+                            <td>Calling Code:</td>
+                            <td>+ 054</td>
+                        </tr>
+                        <tr>
+                            <td>Internet TLD:</td>
+                            <td>.pe</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="weatherinfo">
+                <div class="sub">
+                    <h2>Weather</h2>
+                    <img src="images/weather_sun_icon.svg" alt="weather">
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Temperature:</td>
+                            <td> <span id="currentTemperature">45</span> ºF</td>
+                        </tr>
+                        <tr>
+                            <td>Conditions:</td>
+                            <td><span id="condition">Mostly Clear</span></td>
+                        </tr>
+                        <tr>
+                            <td>Wind:</td>
+                            <td><span id="wind">4</span> mph</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td><span id="currentWindChill"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+        <h2>Things to do</h2>
+
+        <div class="res-grid">
+        
+        </div>
+
+    </main>
+    <footer>
+        <p>&#x1F338;<span id="currentyear"></span> &#x1F338; Rocio Apaza Paricahua ,Peru &#x1F338;</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

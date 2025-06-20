@@ -76,7 +76,7 @@
     }
     /* Call to Action Section */
     .action {
-        border: 2px solid var(--accent1-color);
+        border: 2px solid var(--primary-color);
         border-radius: 10px;
         font-family: cursive;
         color: var(--primary-color);
