@@ -51,27 +51,15 @@
         grid-row: 1/1;
         width: 350px;
     }
-    
-    .sign_up .form {
-        display: flex;
-        flex-direction: column;
-        margin: 0 20px;
-        border: 2px solid var(--primary-color);
-        border-radius: 30px;
-        padding-top: 1px;
+    .sign_up p{
+        font-family: cursive;
+        color: var(--primary-color);
+        font-size: 25px;
+        font-weight: 600;
     }
-    .sign_up .form h2{
-        text-align: center;
-    }
-    .sign_up .input {
-        display: grid;
-        border: none;
-        margin: 20px;
-        
-    }
-    .sign_up #name,
-    .sign_up #email {
-        width: 100%;
+    .sign_up p:hover {
+        transition: .4s ease;
+        color:#73c0c5;
     }
     /* Call to Action Section */
     .action {

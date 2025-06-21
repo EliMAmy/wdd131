@@ -121,28 +121,18 @@ h1 {
     grid-row: 1/1;
     width: 250px;
 }
+.sign_up p{
+    padding-left: 20px;
+    font-family: cursive;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.sign_up p:hover {
+    transition: .4s ease;
+    color:#73c0c5;
+}
 
-.sign_up .form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
-    border: 2px solid var(--primary-color);
-    border-radius: 30px;
-    padding-top: 6px;
-}
-.sign_up .form h2{
-    text-align: center;
-}
-.sign_up .input {
-    display: grid;
-    border: none;
-    margin: 20px;
-    
-}
-.sign_up #name,
-.sign_up #email {
-    width: 100%;
-}
 /* Call to Action Section */
 .action {
     border: 2px solid var(--primary-color);
@@ -151,7 +141,7 @@ h1 {
     color: var(--primary-color);
     font-size: 18px;
     font-weight: 600;
-   
+    padding: 10px;
 }
 
 .action a {

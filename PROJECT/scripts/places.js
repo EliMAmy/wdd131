@@ -138,10 +138,6 @@ const places = [
 
 createPlacesCard(places);
 
-const oldTempleLink = document.querySelector("#nonUtah");
-nonUtahLink.addEventListener("click", () => {
-    nonUtahCard(places.filter(temple => !temple.description.includes("Utah")));
-});
 function createPlacesCard() {
     document.querySelector(".res-grid").innerHTML = "";
     places.forEach(place=> {
